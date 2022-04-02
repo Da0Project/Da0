@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import styled from "styled-components";
 import Navbar from "../src/components/Navbar";
 import Mobilebar from "../src/components/Mobilebar";
+import Footer from "../src/components/Footer";
 
 const Home: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 				<ContentsWrapper>ddd</ContentsWrapper>
 				<Grapic />
 			</Wrapper>
+			<Footer />
 		</Wrapper>
 	);
 };

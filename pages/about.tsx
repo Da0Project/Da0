@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Mobilebar from "../src/components/Mobilebar";
 import Navbar from "../src/components/Navbar";
+import Footer from "../src/components/Footer";
 
 const About: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -19,6 +20,7 @@ const About: NextPage = () => {
 			{mobile ? <Mobilebar /> : <Navbar />}
 			<>ddd</>
 			<></>
+			<Footer />
 		</>
 	);
 };
