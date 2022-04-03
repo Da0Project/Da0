@@ -24,6 +24,10 @@ const Home: NextPage = () => {
 		<Wrapper>
 			{mobile ? <Mobilebar /> : <Navbar />}
 			<Main />
+			<FancyDivider>
+				MADE FROM ZERO, MANAGE USING REGIC MADE FROM ZERO, MANAGE USING REGIC
+				MADE FROM ZERO, MANAGE USING REGIC
+			</FancyDivider>
 			<Intro />
 			<Divider />
 			<Feature />
@@ -46,4 +50,23 @@ const Divider = styled.div`
 	width: 100%;
 	height: 0.025rem;
 	background-color: #fafafa;
+`;
+const FancyDivider = styled.div`
+	height: 5rem;
+	margin: 3rem 0;
+	font-family: ITCAvantGardeGothicStd;
+	font-size: 2.25rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.22;
+	letter-spacing: normal;
+	text-align: left;
+	color: #fafafa;
+	border: solid #fafafa;
+	border-width: 0.063rem 0 0.063rem 0;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 `;
