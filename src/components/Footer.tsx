@@ -17,7 +17,6 @@ const Wrapper = styled.footer`
 	justify-content: space-between;
 	padding: 1.188rem 2.331rem;
 	height: 3.744rem;
-	position: fixed;
 	margin: 0;
 	bottom: 0;
 	left: 0;
