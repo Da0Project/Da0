@@ -28,8 +28,22 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, OpenSans, acumin-pro;
 }
+
+@font-face {
+  font-family: 'acumin-pro';
+  src: url(/fonts/Acumin-BdPro.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ITCAvantGardeGothicStd';
+  src: url(/fonts/ITC Avant Garde Gothic LT Demi.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 a {
   color: inherit;

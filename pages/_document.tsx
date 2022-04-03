@@ -60,6 +60,11 @@ class MyDocument extends Document {
 					<link
 						rel='stylesheet'
 						href='https://use.typekit.net/yzp8rky.css'></link>
+					<link
+						href='//db.onlinewebfonts.com/c/58603d3e778335b9af86b752e6a34f95?family=AvantGardeGothicITCW02DmObl'
+						rel='stylesheet'
+						type='text/css'
+					/>
 				</Head>
 				<body>
 					<Main />

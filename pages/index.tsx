@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Navbar from "../src/components/Navbar";
 import Mobilebar from "../src/components/Mobilebar";
 import Footer from "../src/components/Footer";
+import Main from "../src/components/index/main";
 
 const Home: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -19,10 +20,7 @@ const Home: NextPage = () => {
 	return (
 		<Wrapper>
 			{mobile ? <Mobilebar /> : <Navbar />}
-			<Wrapper>
-				<ContentsWrapper>ddd</ContentsWrapper>
-				<Grapic />
-			</Wrapper>
+			<Main />
 			<Footer />
 		</Wrapper>
 	);
@@ -36,13 +34,4 @@ const Wrapper = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-`;
-const ContentsWrapper = styled.div``;
-const Grapic = styled.div`
-	width: 8.75rem;
-	height: 57.438rem;
-	margin: 2.125rem 0 4.188rem 1.063rem;
-	-webkit-filter: blur(100px);
-	filter: blur(6.25rem);
-	background-color: rgba(91, 21, 182, 0.5);
 `;
