@@ -8,6 +8,7 @@ import Footer from "../src/components/Footer";
 import Main from "../src/components/index/Main";
 import Intro from "../src/components/index/Intro";
 import Dowload from "../src/components/index/Download";
+import Feature from "../src/components/index/Feature";
 
 const Home: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -23,8 +24,9 @@ const Home: NextPage = () => {
 		<Wrapper>
 			{mobile ? <Mobilebar /> : <Navbar />}
 			<Main />
-			<Divider />
 			<Intro />
+			<Divider />
+			<Feature />
 			<Dowload />
 			<Footer />
 		</Wrapper>
@@ -36,7 +38,7 @@ export default Home;
 const Wrapper = styled.div`
 	margin: 0;
 	background-color: #111;
-	width: 100% !important;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 `;
