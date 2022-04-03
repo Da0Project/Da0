@@ -14,7 +14,9 @@ export default function Dowload() {
 			<InnerWrapper>
 				<Button>Button</Button>
 			</InnerWrapper>
-			<Graphic />
+			<InnerWrapper>
+				<Graphic />
+			</InnerWrapper>
 		</Wrapper>
 	);
 }
