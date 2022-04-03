@@ -7,6 +7,7 @@ import Mobilebar from "../src/components/Mobilebar";
 import Footer from "../src/components/Footer";
 import Main from "../src/components/index/Main";
 import Intro from "../src/components/index/Intro";
+import Dowload from "../src/components/index/Download";
 
 const Home: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -22,8 +23,9 @@ const Home: NextPage = () => {
 		<Wrapper>
 			{mobile ? <Mobilebar /> : <Navbar />}
 			<Main />
-			<Intro />
 			<Divider />
+			<Intro />
+			<Dowload />
 			<Footer />
 		</Wrapper>
 	);
@@ -39,10 +41,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 `;
 const Divider = styled.div`
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid #fff;
 	width: 100%;
-	height: 1px;
-	display: inline-block;
-	vertical-align: middle;
+	height: 0.025rem;
+	background-color: #fafafa;
 `;
