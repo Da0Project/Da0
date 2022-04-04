@@ -23,10 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 
 const GlobalStyle = createGlobalStyle`
-html { font-size: 16px},
+html { font-size: 16px },
 body {
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, OpenSans, acumin-pro;
 }
@@ -44,7 +45,6 @@ body {
   font-style: normal;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -57,73 +57,87 @@ a {
 
 
 @media (max-width: 252px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 7px;
   }
 }
 @media (min-width: 253px) and (max-width: 270px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 7.5px;
   }
 }
 @media (min-width: 271px) and (max-width: 288px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 8px;
   }
 }
 @media (min-width: 289px) and (max-width: 306px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 8.5px;
   }
 }
 @media (min-width: 307px) and (max-width: 324px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 9px;
   }
 }
 @media (min-width: 325px) and (max-width: 342px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 9.5px;
   }
 }
 @media (min-width: 343px) and (max-width: 360px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 10px;
   }
 }
 @media (min-width: 361px) and (max-width: 375px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 10.416px;
   }
 }
 @media (min-width: 376px) and (max-width: 378px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 10.5px;
   }
 }
 @media (min-width: 379px) and (max-width: 396px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 11px;
   }
 }
 @media (min-width: 397px) and (max-width: 414px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 11.5px;
   }
 }
 @media (min-width: 415px) and (max-width: 432px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 12px;
   }
 }
 @media (min-width: 433px) and (max-width: 451px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 12.5px;
   }
 }
 
 @media (min-width: 451px) and (max-width: 481px) {
-  html {
+  html { 
+    font-family: 'ITCAvantGardeGothicStd' !important;
     font-size: 13px;
   }
 }

@@ -54,7 +54,7 @@ const Divider = styled.div`
 const FancyDivider = styled.div`
 	height: 5rem;
 	margin: 3rem 0;
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd !important;
 	font-size: 2.25rem;
 	font-weight: normal;
 	font-stretch: normal;
