@@ -16,9 +16,12 @@
     "@mui/material": "^5.5.3",
     "@mui/styled-engine-sc": "^5.5.2",
     "@mui/styles": "^5.5.3",
+    "@types/react-burger-menu": "^2.8.3",
     "next": "^12.1.4",
     "react": "^18.0.0",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^18.0.0",
+    "react-hamburger-menus": "^1.0.12",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
