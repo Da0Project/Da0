@@ -88,7 +88,7 @@ const LogoImage = styled.img`
 	margin-right: 1.313rem;
 `;
 const Title = styled.div`
-	font-family: acumin-pro;
+	font-family: acumin-pro, -apple-system;
 	font-weight: 900;
 	font-size: 1.631rem;
 	font-style: bold;
@@ -101,7 +101,7 @@ const DrawerWrapper = styled.div`
 `;
 const Text = styled.div`
 	color: #fff;
-	font-family: OpenSans;
+	font-family: OpenSans, -apple-system;
 	font-size: 1.631rem;
 	margin: 1.5rem 1rem 1.5rem 1rem;
 `;

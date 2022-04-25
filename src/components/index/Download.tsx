@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 	justify-content: center;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 3.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -41,8 +41,7 @@ const Title = styled.p`
 	margin: 2.313rem 0;
 `;
 const Desc = styled.p`
-	font-family: OpenSans;
-	font-family: OpenSans;
+	font-family: OpenSans, -apple-system;
 	font-size: 1.25rem;
 	font-weight: 500;
 	font-stretch: normal;
@@ -80,7 +79,7 @@ const Button = styled.a`
 	padding: 1.5rem 4.5rem;
 	border-radius: 2.406rem;
 	background-color: #6c6bf6;
-	font-family: ITCAvantGardeGothicStd-Demi;
+	font-family: ITCAvantGardeGothicStd-Demi, -apple-system;
 	font-size: 1.5rem;
 	font-weight: normal;
 	font-stretch: normal;

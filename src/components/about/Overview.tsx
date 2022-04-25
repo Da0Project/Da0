@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 	margin-bottom: 14.375rem;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -55,7 +55,7 @@ const Title = styled.p`
 	margin-bottom: 3.75rem;
 `;
 const Desc = styled.p`
-  font-family: OpenSans;
+  font-family: OpenSans, -apple-system;
   font-size: 1.5rem;
   font-weight: normal;
   font-stretch: normal;
@@ -87,7 +87,7 @@ const Graphic = styled.div`
 	z-index: 1;
 `;
 const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 2.25rem;
 	font-weight: bold;
 	font-stretch: normal;

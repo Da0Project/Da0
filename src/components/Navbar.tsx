@@ -58,7 +58,7 @@ const LogoImage = styled.img`
 	margin-right: 1.313rem;
 `;
 const Title = styled.div`
-	font-family: acumin-pro;
+	font-family: acumin-pro, -apple-system;
 	font-weight: 900;
 	font-size: 1.631rem;
 	font-style: bold;
@@ -70,7 +70,7 @@ const ButtonWrapper = styled.div`
 	justify-content: space-between;
 `;
 const Button = styled.a`
-	font-family: OpenSans;
+	font-family: OpenSans, -apple-system;
 	font-size: 1.25rem;
 	font-weight: 500;
 	font-stretch: normal;
@@ -82,7 +82,7 @@ const Button = styled.a`
 	margin-right: 4.5rem;
 `;
 const DownloadButton = styled.a`
-	font-family: OpenSans;
+	font-family: OpenSans, -apple-system;
 	font-size: 1rem;
 	font-weight: 500;
 	font-stretch: normal;

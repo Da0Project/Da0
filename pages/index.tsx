@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 			<Main />
 			<FancyDivider>
 				MADE FROM ZERO, MANAGE USING REGIC MADE FROM ZERO, MANAGE USING REGIC
-				MADE FROM ZERO, MANAGE USING REGIC
+				MADE FROM ZERO, MANAGE USING REGIC MADE FROM ZERO, MANAGE USING REGIC
 			</FancyDivider>
 			<Intro />
 			<Divider />
@@ -54,7 +54,7 @@ const Divider = styled.div`
 const FancyDivider = styled.div`
 	height: 5rem;
 	margin: 3rem 0;
-	font-family: ITCAvantGardeGothicStd !important;
+	font-family: ITCAvantGardeGothicStd, -apple-system !important;
 	font-size: 2.25rem;
 	font-weight: normal;
 	font-stretch: normal;

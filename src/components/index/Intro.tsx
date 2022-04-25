@@ -38,12 +38,12 @@ const Circle = styled.div`
 	padding: 0.7rem;
 	border: solid 1px #fafafa;
 	color: #fafafa;
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 1.5rem;
 	border-radius: 50%;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 6rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -58,7 +58,7 @@ const Title = styled.p`
 	}
 `;
 const Desc = styled.p`
-	font-family: Roboto;
+	font-family: Roboto, -apple-system;
 	font-size: 1.25rem;
 	font-weight: normal;
 	font-stretch: normal;

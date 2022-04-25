@@ -57,7 +57,7 @@ const Wrapper = styled.div`
 	}
 `;
 const Info = styled.p`
-  font-family: OpenSans;
+  font-family: OpenSans, -apple-system;
   font-size: 1.5rem;
   font-weight: normal;
   font-stretch: normal;
@@ -81,7 +81,7 @@ const InnerWrapper = styled.div`
 	}
 `;
 const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 2.25rem;
 	font-weight: bold;
 	font-stretch: normal;
@@ -102,7 +102,7 @@ const DescWrapper = styled.div`
 	}
 `;
 const Subject = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 2rem;
 	font-weight: 500;
 	font-stretch: normal;
@@ -118,7 +118,7 @@ const Image = styled.img`
 	width: 23.25rem;
 `;
 const Desc = styled.div`
-	font-family: OpenSans;
+	font-family: OpenSans, -apple-system;
 	font-size: 1rem;
 	font-weight: normal;
 	font-stretch: normal;

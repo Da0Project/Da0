@@ -39,7 +39,7 @@ const Grapic = styled.div`
 	background-color: rgba(91, 21, 182, 0.5);
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 6rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -51,7 +51,7 @@ const Title = styled.p`
 `;
 const Sub = styled.p`
 	-webkit-text-stroke: 0.063rem #fafafa;
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -62,7 +62,7 @@ const Sub = styled.p`
 	margin-bottom: 4rem;
 `;
 const Desc = styled.p`
-	font-family: Roboto;
+	font-family: Roboto, -apple-system;
 	font-size: 1.25rem;
 	font-weight: normal;
 	font-stretch: normal;

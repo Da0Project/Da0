@@ -73,7 +73,7 @@ const Wrapper = styled.div`
 	justify-content: center;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd-Demi;
+	font-family: ITCAvantGardeGothicStd-Demi, -apple-system;
 	font-size: 4.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -115,7 +115,7 @@ const TextBox = styled.div`
 	}
 `;
 const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4rem;
 	font-weight: 700;
 	font-stretch: normal;
@@ -127,8 +127,8 @@ const Sub = styled.p`
 	margin-bottom: 3rem;
 `;
 const Desc = styled.p`
-	font-family: OpenSans;
-	font-size: 1rem;
+	font-family: OpenSans, -apple-system;
+	font-size: 1.2rem;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -154,7 +154,7 @@ const TextBox2 = styled.div`
 	}
 `;
 const Sub2 = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4rem;
 	font-weight: 700;
 	font-stretch: normal;
@@ -166,8 +166,8 @@ const Sub2 = styled.p`
 	margin-bottom: 3rem;
 `;
 const Desc2 = styled.p`
-	font-family: OpenSans;
-	font-size: 1rem;
+	font-family: OpenSans, -apple-system;
+	font-size: 1.2rem;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;

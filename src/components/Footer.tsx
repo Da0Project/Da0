@@ -27,7 +27,7 @@ const Wrapper = styled.footer`
 `;
 const Text = styled.div`
 	margin: 0 0px 0 0;
-	font-family: Poppins;
+	font-family: Poppins, -apple-system;
 	font-size: 1rem;
 	font-weight: 500;
 	font-stretch: normal;
