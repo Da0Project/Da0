@@ -65,27 +65,31 @@ const Title = styled.p`
 	padding: 0 24rem;
 	@media only screen and (max-width: 600px) {
 		font-size: 4rem;
+		margin: 0;
+		padding: 5rem;
+		text-align: left;
 	}
 	margin-bottom: 3.75rem;
 `;
 const Desc = styled.p`
-  font-family: OpenSans, -apple-system;
-  font-size: 1.125rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.78;
-  letter-spacing: normal;
-  text-align: left;
-  color: var(--white);
-}
-}
+	font-family: OpenSans, -apple-system;
+	font-size: 1.125rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.78;
+	letter-spacing: normal;
+	text-align: left;
+	color: var(--white);
 `;
 const Profile = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 35rem;
 	margin-right: 5rem;
+	@media only screen and (max-width: 600px) {
+		margin-bottom: 4rem;
+	}
 `;
 const Image = styled.img`
 	max-width: 32.125rem;
@@ -113,7 +117,12 @@ const Name = styled.p`
 const InnerWrapper = styled.div`
 	display: flex;
 	flex-direction: space-between;
+	flex-wrap: wrap;
 	padding: 0 22.5rem;
+	@media only screen and (max-width: 600px) {
+		margin: 0 4rem;
+		padding: 0;
+	}
 `;
 const Linkedin = styled.img`
 	width: 2rem;

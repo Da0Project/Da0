@@ -75,6 +75,7 @@ const InnerWrapper = styled.div`
 	padding-right: 14rem;
 	@media only screen and (max-width: 600px) {
 		max-width: 23rem;
+		padding-right: 0rem;
 	}
 `;
 const Graphic = styled.div`
