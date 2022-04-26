@@ -5,29 +5,41 @@ import styled from "styled-components";
 export default function Team() {
 	return (
 		<Wrapper>
-			{/* <GraphicWrapper>
-				<Graphic2 />
-				<Graphic />
-			</GraphicWrapper>
+			<Title>Team</Title>
 			<InnerWrapper>
-				<Title>About</Title>
-				<Sub>Overview</Sub>
-				<Desc>
-					DAO is a great solution for important community problems, including
-					contribution compensation, decision-making of the project, and
-					measuring community value in web3 ecosystem. However, the proper
-					managing tool for DAO is still few especially, discord bot for DAO
-					provides only very basic functions.
-				</Desc>
-				<Desc>
-					Therefore, Da0 is building ultimate tools for managing DAO on discord.
-					Through the Da0’s discord bot ”Da0”, you can manage DAO tasks, DAO
-					members more efficiently. Da0 provides the enrollment automation, DAO
-					information aggregator, and proposal alert system in the discord. For
-					these features, Da0 uses the own web server to pull updated states of
-					blockchain.
-				</Desc>
-			</InnerWrapper> */}
+				<Profile>
+					<Image2 src='/about/cl.svg' />
+					<Info>
+						<Name>Chaerin Kim</Name>
+						<Desc>
+							President of EWHA W. Univ Blockchain Academic Club
+							<br /> DM application bot of Da0 / Database
+							<br />
+							<Row>
+								<a href='https://www.linkedin.com/in/chaerin-kim-a270101b8/'>
+									<Linkedin src='/about/linkedin.svg' />
+								</a>
+							</Row>
+						</Desc>
+					</Info>
+				</Profile>
+				<Profile>
+					<Image src='/about/sw.svg' />
+					<Info>
+						<Name>Seungwon Choi</Name>
+						<Desc>
+							Alumni of EWHA W. Univ Blockchain Academic Club <br />
+							Authorization system of Da0 / Server / Front-end
+							<br />
+							<Row>
+								<a href='https://www.linkedin.com/in/seungwon-choi-8a74a6210/'>
+									<Linkedin src='/about/linkedin.svg' />
+								</a>
+							</Row>
+						</Desc>
+					</Info>
+				</Profile>
+			</InnerWrapper>
 		</Wrapper>
 	);
 }
@@ -37,9 +49,10 @@ const Wrapper = styled.div`
 	width: 100%;
 	display: flex;
 	margin-bottom: 14.375rem;
+	flex-direction: column;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -48,66 +61,65 @@ const Title = styled.p`
 	letter-spacing: -0.18rem;
 	text-align: left;
 	color: #fafafa;
-	margin: 0;
+	margin-bottom: 7.5rem;
+	padding: 0 24rem;
 	@media only screen and (max-width: 600px) {
 		font-size: 4rem;
 	}
 	margin-bottom: 3.75rem;
 `;
 const Desc = styled.p`
-  font-family: OpenSans;
-  font-size: 1.5rem;
+  font-family: OpenSans, -apple-system;
+  font-size: 1.125rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2;
+  line-height: 1.78;
   letter-spacing: normal;
   text-align: left;
-  color: #fafafa;
+  color: var(--white);
+}
 }
 `;
-const InnerWrapper = styled.div`
-	margin-top: 7.938rem;
+const Profile = styled.div`
 	display: flex;
-	justify-content: left;
 	flex-direction: column;
-	max-width: 76.5rem;
-	@media only screen and (max-width: 600px) {
-		max-width: 23rem;
-	}
+	max-width: 35rem;
+	margin-right: 5rem;
 `;
-const Graphic = styled.div`
-	width: 22.313rem;
-	height: 35.438rem;
-	margin-top: 3.75rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(91, 21, 182, 0.1);
-	left: 0;
-	z-index: 1;
+const Image = styled.img`
+	max-width: 32.125rem;
+	margin-bottom: 4.863rem;
 `;
-const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
-	font-size: 2.25rem;
+const Image2 = styled.img`
+	max-width: 25.938rem;
+	margin-bottom: 2.438rem;
+`;
+const Info = styled.div`
+	color: white;
+`;
+const Name = styled.p`
+	font-family: ITCAvantGardeGothicStd-Demi, -apple-system;
+	font-size: 2rem;
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: normal;
+	line-height: 0.88;
 	letter-spacing: normal;
 	text-align: left;
-	color: #fafafa;
-	margin-bottom: 2.563rem;
+	color: var(--white);
+	margin-bottom: 1.5rem;
 `;
-const Graphic2 = styled.div`
-	width: 9.688rem;
-	height: 20.563rem;
-	margin-top: 3rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(25, 162, 127, 0.1);
+const InnerWrapper = styled.div`
+	display: flex;
+	flex-direction: space-between;
+	padding: 0 22.5rem;
 `;
-const GraphicWrapper = styled.div`
-	@media only screen and (max-width: 600px) {
-		max-width: 4rem;
-	}
+const Linkedin = styled.img`
+	width: 2rem;
+`;
+const Row = styled.div`
+	display: flex;
+	margin-top: 1rem;
+	justify-content: left;
 `;

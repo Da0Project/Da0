@@ -11,8 +11,8 @@ export default function Development() {
 					<Subject>Server</Subject>
 					<Image src='/about/4.svg' />
 					<Desc>
-						API, Hosting Discord Bot Server Using Google Cloud (Temporarily
-						using NodeJS to run the local server)
+						API, Hosting Discord Bot Server <br />
+						Using Google Cloud
 					</Desc>
 				</DescWrapper>
 				<DescWrapper>
@@ -115,7 +115,7 @@ const Subject = styled.p`
 `;
 const Image = styled.img`
 	margin-bottom: 4rem;
-	width: 23.25rem;
+	width: 18.25rem;
 `;
 const Desc = styled.div`
 	font-family: OpenSans, -apple-system;

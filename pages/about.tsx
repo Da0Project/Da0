@@ -8,6 +8,7 @@ import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import Overview from "../src/components/about/Overview";
 import Development from "../src/components/about/Development";
+import Team from "../src/components/about/Team";
 
 const About: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -24,6 +25,7 @@ const About: NextPage = () => {
 			{mobile ? <Mobilebar /> : <Navbar />}
 			<Overview />
 			<Development />
+			<Team />
 			<Footer />
 		</Wrapper>
 	);

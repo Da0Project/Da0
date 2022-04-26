@@ -72,6 +72,7 @@ const InnerWrapper = styled.div`
 	justify-content: left;
 	flex-direction: column;
 	max-width: 76.5rem;
+	padding-right: 14rem;
 	@media only screen and (max-width: 600px) {
 		max-width: 23rem;
 	}
@@ -107,6 +108,7 @@ const Graphic2 = styled.div`
 	background-color: rgba(25, 162, 127, 0.1);
 `;
 const GraphicWrapper = styled.div`
+	padding: 0;
 	@media only screen and (max-width: 600px) {
 		max-width: 4rem;
 	}
