@@ -5,41 +5,53 @@ import styled from "styled-components";
 export default function Roadmap() {
 	return (
 		<Wrapper>
-			{/* <GraphicWrapper>
-				<Graphic2 />
-				<Graphic />
-			</GraphicWrapper>
-			<InnerWrapper>
-				<Title>About</Title>
-				<Sub>Overview</Sub>
-				<Desc>
-					DAO is a great solution for important community problems, including
-					contribution compensation, decision-making of the project, and
-					measuring community value in web3 ecosystem. However, the proper
-					managing tool for DAO is still few especially, discord bot for DAO
-					provides only very basic functions.
-				</Desc>
-				<Desc>
-					Therefore, Da0 is building ultimate tools for managing DAO on discord.
-					Through the Da0’s discord bot ”Da0”, you can manage DAO tasks, DAO
-					members more efficiently. Da0 provides the enrollment automation, DAO
-					information aggregator, and proposal alert system in the discord. For
-					these features, Da0 uses the own web server to pull updated states of
-					blockchain.
-				</Desc>
-			</InnerWrapper> */}
+			<Title>Project Roadmap</Title>
+			<Box>
+				<Image src='/about/roadmap.svg' />
+				<Textbox>
+					<Contents>
+						<Date1>2022 Feb</Date1>
+						<Subtitle>Planning</Subtitle>
+						<Subtitle>Market Research</Subtitle>
+						<Desc></Desc>
+					</Contents>
+					<Contents>
+						<Date>2022 Mar</Date>
+						<Subtitle>DB structure</Subtitle>
+						<Subtitle>Simple bot implementation</Subtitle>
+						<Desc>
+							Connect with Solscan <br />
+							Application Form bot
+						</Desc>
+					</Contents>
+					<Contents>
+						<Date>2022 Apr</Date>
+						<Subtitle>Bot implementation</Subtitle>
+						<Desc>
+							Connect Wallet / Wallet Authorization
+							<br /> Add various form options
+							<br /> (integrate with another dao plaforms) <br />
+							DAO Information Aggregator
+							<br /> New Proposal Alert <br />
+							Support Ethereum Network
+						</Desc>
+					</Contents>
+				</Textbox>
+			</Box>
 		</Wrapper>
 	);
 }
 const Wrapper = styled.div`
+	padding: 0;
 	margin: 0;
 	background-color: #111;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	margin-bottom: 14.375rem;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -48,66 +60,94 @@ const Title = styled.p`
 	letter-spacing: -0.18rem;
 	text-align: left;
 	color: #fafafa;
-	margin: 0;
+	margin: 20rem 0rem 10rem 22.5rem;
 	@media only screen and (max-width: 600px) {
 		font-size: 4rem;
+		margin: 3rem;
 	}
 	margin-bottom: 3.75rem;
 `;
-const Desc = styled.p`
-  font-family: OpenSans;
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fafafa;
-}
-`;
-const InnerWrapper = styled.div`
-	margin-top: 7.938rem;
-	display: flex;
-	justify-content: left;
-	flex-direction: column;
-	max-width: 76.5rem;
+const Image = styled.img`
+	max-width: 5000rem;
+	width: 100%;
 	@media only screen and (max-width: 600px) {
-		max-width: 23rem;
+		visibility: collapse;
 	}
 `;
-const Graphic = styled.div`
-	width: 22.313rem;
-	height: 35.438rem;
-	margin-top: 3.75rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(91, 21, 182, 0.1);
-	left: 0;
-	z-index: 1;
+const Textbox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 6.5rem 1.5rem 0 1.5rem; 
+	@media only screen and (max-width: 600px) {
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+}`;
+const Box = styled.div`
+	margin: 0 22.5rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 4rem;
+		margin: 3rem;
+	}
 `;
-const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
-	font-size: 2.25rem;
-	font-weight: bold;
+const Contents = styled.div`
+	@media only screen and (max-width: 600px) {
+		width: 20rem;
+	}
+`;
+const Date1 = styled.p`
+	font-family: ITCAvantGardeGothicStd, -apple-system;
+	font-size: 3rem;
+	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: normal;
+	line-height: 0.5;
 	letter-spacing: normal;
 	text-align: left;
-	color: #fafafa;
-	margin-bottom: 2.563rem;
-`;
-const Graphic2 = styled.div`
-	width: 9.688rem;
-	height: 20.563rem;
-	margin-top: 3rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(25, 162, 127, 0.1);
-`;
-const GraphicWrapper = styled.div`
+	color: white;
+	margin-bottom: 6.2rem;
 	@media only screen and (max-width: 600px) {
-		max-width: 4rem;
+		margin-top: 0rem;
+		margin-bottom: 5rem;
 	}
+`;
+const Date = styled.p`
+	font-family: ITCAvantGardeGothicStd, -apple-system;
+	font-size: 3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: white;
+	margin-bottom: 6.2rem;
+	@media only screen and (max-width: 600px) {
+		margin-top: 8rem;
+		margin-bottom: 5rem;
+	}
+`;
+const Subtitle = styled.p`
+	font-family: OpenSans, -apple-system;
+	font-size: 1.125rem;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.11;
+	letter-spacing: normal;
+	text-align: left;
+	color: white;
+	margin-bottom: 1.3rem;
+`;
+const Desc = styled.div`
+	font-family: OpenSans, -apple-system;
+	font-size: 0.875rem;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: left;
+	color: white;
 `;

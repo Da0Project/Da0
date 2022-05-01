@@ -9,6 +9,7 @@ import Footer from "../src/components/Footer";
 import Overview from "../src/components/about/Overview";
 import Development from "../src/components/about/Development";
 import Team from "../src/components/about/Team";
+import Roadmap from "../src/components/about/Roadmap";
 
 const About: NextPage = () => {
 	const [mobile, setState] = useState(false);
@@ -26,13 +27,14 @@ const About: NextPage = () => {
 			<Overview />
 			<Development />
 			<Team />
+			<Roadmap />
 			<Footer />
 		</Wrapper>
 	);
 };
 
 const Wrapper = styled.div`
-	margin: 0;
+	margin-top: 0;
 	background-color: #111;
 	width: 100%;
 	display: flex;
