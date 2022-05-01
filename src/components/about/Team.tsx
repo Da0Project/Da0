@@ -116,11 +116,11 @@ const Name = styled.p`
 `;
 const InnerWrapper = styled.div`
 	display: flex;
-	flex-direction: space-between;
-	flex-wrap: wrap;
-	padding: 0 22.5rem;
+	justify-content: space-between;
+	padding: 0 12.5rem 0 22.5rem;
 	@media only screen and (max-width: 600px) {
-		margin: 0 4rem;
+		margin: 0 3rem;
+		flex-wrap: wrap;
 		padding: 0;
 	}
 `;
