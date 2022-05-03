@@ -36,7 +36,9 @@ const Wrapper = styled.div`
 	background-color: #111;
 	width: 100%;
 	display: flex;
-	margin-bottom: 14.375rem;
+	@media only screen and (max-width: 600px) {
+		padding-bottom: 15rem;
+	}
 `;
 const Title = styled.p`
 	font-family: ITCAvantGardeGothicStd, -apple-system;

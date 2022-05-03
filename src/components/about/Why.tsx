@@ -5,38 +5,76 @@ import styled from "styled-components";
 export default function Why() {
 	return (
 		<Wrapper>
-			{/* <GraphicWrapper>
-				<Graphic2 />
-				<Graphic />
-			</GraphicWrapper>
-			<InnerWrapper>
-				<Title>About</Title>
-				<Sub>Overview</Sub>
-				<Desc>
-					DAO is a great solution for important community problems, including
-					contribution compensation, decision-making of the project, and
-					measuring community value in web3 ecosystem. However, the proper
-					managing tool for DAO is still few especially, discord bot for DAO
-					provides only very basic functions.
-				</Desc>
-				<Desc>
-					Therefore, Da0 is building ultimate tools for managing DAO on discord.
-					Through the Da0’s discord bot ”Da0”, you can manage DAO tasks, DAO
-					members more efficiently. Da0 provides the enrollment automation, DAO
-					information aggregator, and proposal alert system in the discord. For
-					these features, Da0 uses the own web server to pull updated states of
-					blockchain.
-				</Desc>
-			</InnerWrapper> */}
+			<Title>Why this project is important?</Title>
+			<Contents>
+				<Image src='/about/why.svg' />
+				<Text>
+					<Content>
+						<Bar1 />
+						<SubTitle>
+							Necessity of Modular Tool for Distributed Operation
+						</SubTitle>
+						<Desc>
+							Discord has become de facto tool for governance deliberation
+						</Desc>
+						<Desc>
+							The real decision-making is happening off-chain in conversations
+							and then voting on-chain as the final step of governance. Need to
+							lower cognitive overhead getting involved with governance so
+							\\anyone can get involved, vet, or whistleblow if something's not
+							going right.
+						</Desc>
+						<Desc>
+							Difficult to standardize fixed set of terms how should governance
+							in an archetype will be
+						</Desc>
+						<Desc>
+							DAO processes have matured enough to be used and trusted but they
+							are always evolving and always changing. Instead of building
+							direct DAO tooling.
+						</Desc>
+					</Content>
+					<Content>
+						<Bar2 />
+						<SubTitle>Possibility of DAO</SubTitle>
+						<Desc>Monetization, Membership, Scalability, Engagement, Data</Desc>
+						<Desc>
+							Clearly, many of the advantages of DAOs stem from the promise of
+							ownership, which blockchain enables. This is why many have called
+							DAOs the next evolution in online communities.
+						</Desc>
+					</Content>
+					<Content>
+						<Bar3 />
+						<SubTitle>Mobile Application Type</SubTitle>
+						<Desc>An important role in improving user experience</Desc>
+						<Desc>
+							mobile-first approach to user-first DAO means everyone has equal
+							access to decision making process and became real owner of service
+							and protocol.
+						</Desc>
+						<Desc>
+							The low voter turnout mentioned as a problem can be solved by
+							improving accessibility through alert services and mobile
+							services, and tools can be provided to facilitate independent
+							application creation, addressing the current DAO structural
+							problems centered on discord.
+						</Desc>
+					</Content>
+				</Text>
+			</Contents>
 		</Wrapper>
 	);
 }
 const Wrapper = styled.div`
-	margin: 0;
+	margin: 25rem 0;
+	@media only screen and (max-width: 600px) {
+		margin: 10rem 0;
+	}
 	background-color: #111;
 	width: 100%;
 	display: flex;
-	margin-bottom: 14.375rem;
+	flex-direction: column;
 `;
 const Title = styled.p`
 	font-family: ITCAvantGardeGothicStd;
@@ -46,7 +84,7 @@ const Title = styled.p`
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: -0.18rem;
-	text-align: left;
+	text-align: center;
 	color: #fafafa;
 	margin: 0;
 	@media only screen and (max-width: 600px) {
@@ -54,60 +92,67 @@ const Title = styled.p`
 	}
 	margin-bottom: 3.75rem;
 `;
-const Desc = styled.p`
-  font-family: OpenSans;
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fafafa;
-}
-`;
-const InnerWrapper = styled.div`
-	margin-top: 7.938rem;
+const Contents = styled.div`
+	padding: 10rem 22.5rem 0 22.5rem;
 	display: flex;
-	justify-content: left;
-	flex-direction: column;
-	max-width: 76.5rem;
+	justify-content: space-between;
 	@media only screen and (max-width: 600px) {
-		max-width: 23rem;
+		flex-wrap: wrap;
+		padding: 4rem;
+	}
+	align-items: center;
+`;
+const Image = styled.img`
+	max-width: 28.875rem;
+`;
+const Text = styled.div`
+	@media only screen and (max-width: 600px) {
+		padding-top: 6rem;
 	}
 `;
-const Graphic = styled.div`
-	width: 22.313rem;
-	height: 35.438rem;
-	margin-top: 3.75rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(91, 21, 182, 0.1);
-	left: 0;
-	z-index: 1;
+const Content = styled.div`
+	max-width: 28.312rem;
+	margin-bottom: 3.5rem;
 `;
-const Sub = styled.p`
-	font-family: ITCAvantGardeGothicStd;
-	font-size: 2.25rem;
-	font-weight: bold;
+const SubTitle = styled.p`
+	font-family: ITCAvantGardeGothicStd-Demi;
+	font-size: 2rem;
+	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: normal;
+	line-height: 1.25;
 	letter-spacing: normal;
 	text-align: left;
-	color: #fafafa;
-	margin-bottom: 2.563rem;
+	color: white;
+	margin-bottom: 1.5rem;
 `;
-const Graphic2 = styled.div`
-	width: 9.688rem;
-	height: 20.563rem;
-	margin-top: 3rem;
-	-webkit-filter: blur(100px);
-	filter: blur(100px);
-	background-color: rgba(25, 162, 127, 0.1);
+const Desc = styled.p`
+	font-family: ITCAvantGardeGothicStd;
+	font-size: 0.875rem;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: left;
+	color: white;
+	margin-bottom: 1rem;
 `;
-const GraphicWrapper = styled.div`
-	@media only screen and (max-width: 600px) {
-		max-width: 4rem;
-	}
+const Bar1 = styled.div`
+	width: 2.5rem;
+	height: 0.5rem;
+	background-color: #5332b2;
+	margin-bottom: 1.5rem;
+`;
+const Bar2 = styled.div`
+	width: 2.5rem;
+	height: 0.5rem;
+	background-color: #3f6ac8;
+	margin-bottom: 1.5rem;
+`;
+const Bar3 = styled.div`
+	width: 2.5rem;
+	height: 0.5rem;
+	background-color: #2ea7e1;
+	margin-bottom: 1.5rem;
 `;
