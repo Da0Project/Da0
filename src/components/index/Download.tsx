@@ -12,7 +12,9 @@ export default function Dowload() {
 			</Title>
 			<Desc>Click the button below.</Desc>
 			<InnerWrapper>
-				<Button>Button</Button>
+				<Button href='https://discord.com/oauth2/authorize?client_id=948987039821484103&permissions=8&scope=bot'>
+					Button
+				</Button>
 			</InnerWrapper>
 			<InnerWrapper>
 				<Graphic />
@@ -51,6 +53,9 @@ const Desc = styled.p`
 	text-align: center;
 	color: #fff;
 	margin-bottom: 5.063rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.6rem;
+	}
 `;
 const InnerWrapper = styled.div`
 	display: flex;

@@ -81,6 +81,9 @@ const Desc = styled.p`
 	letter-spacing: normal;
 	text-align: left;
 	color: var(--white);
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
 const Profile = styled.div`
 	display: flex;

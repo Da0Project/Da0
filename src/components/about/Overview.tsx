@@ -19,14 +19,14 @@ export default function Overview() {
 					managing tool for DAO is still few especially, discord bot for DAO
 					provides only very basic functions.
 				</Desc>
-				<Desc>
+				<Desc2>
 					Therefore, Da0 is building ultimate tools for managing DAO on discord.
 					Through the Da0’s discord bot ”Da0”, you can manage DAO tasks, DAO
 					members more efficiently. Da0 provides the enrollment automation, DAO
 					information aggregator, and proposal alert system in the discord. For
 					these features, Da0 uses the own web server to pull updated states of
 					blockchain.
-				</Desc>
+				</Desc2>
 			</InnerWrapper>
 		</Wrapper>
 	);
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 	width: 100%;
 	display: flex;
 	@media only screen and (max-width: 600px) {
-		padding-bottom: 15rem;
+		padding-bottom: 10rem;
 	}
 `;
 const Title = styled.p`
@@ -58,7 +58,7 @@ const Title = styled.p`
 `;
 const Desc = styled.p`
   font-family: OpenSans, -apple-system;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -66,6 +66,10 @@ const Desc = styled.p`
   letter-spacing: normal;
   text-align: left;
   color: #fafafa;
+  @media only screen and (max-width: 600px) {
+		padding-bottom: 0;
+		font-size: 1.5rem;
+	}
 }
 `;
 const InnerWrapper = styled.div`
@@ -76,8 +80,10 @@ const InnerWrapper = styled.div`
 	max-width: 76.5rem;
 	padding-right: 14rem;
 	@media only screen and (max-width: 600px) {
-		max-width: 23rem;
-		padding-right: 0rem;
+		max-width: 27rem;
+		padding-right: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 `;
 const Graphic = styled.div`
@@ -115,4 +121,20 @@ const GraphicWrapper = styled.div`
 	@media only screen and (max-width: 600px) {
 		max-width: 4rem;
 	}
+`;
+const Desc2 = styled.p`
+  font-family: OpenSans, -apple-system;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fafafa;
+  @media only screen and (max-width: 600px) {
+		display: none;
+		font-size: 1.5rem;
+	}
+}
 `;

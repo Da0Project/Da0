@@ -125,10 +125,13 @@ const SubTitle = styled.p`
 	text-align: left;
 	color: white;
 	margin-bottom: 1.5rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 2rem;
+	}
 `;
 const Desc = styled.p`
 	font-family: ITCAvantGardeGothicStd, -apple-system;
-	font-size: 0.875rem;
+	font-size: 1.1rem;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -137,6 +140,9 @@ const Desc = styled.p`
 	text-align: left;
 	color: white;
 	margin-bottom: 1rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
 const Bar1 = styled.div`
 	width: 2.5rem;

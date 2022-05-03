@@ -93,7 +93,7 @@ const Box = styled.div`
 `;
 const Contents = styled.div`
 	@media only screen and (max-width: 600px) {
-		width: 20rem;
+		width: 27rem;
 	}
 `;
 const Date1 = styled.p`
@@ -130,7 +130,7 @@ const Date = styled.p`
 `;
 const Subtitle = styled.p`
 	font-family: OpenSans, -apple-system;
-	font-size: 1.125rem;
+	font-size: 1.3rem;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -139,10 +139,13 @@ const Subtitle = styled.p`
 	text-align: left;
 	color: white;
 	margin-bottom: 1.3rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.6rem;
+	}
 `;
 const Desc = styled.div`
 	font-family: OpenSans, -apple-system;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: normal;
@@ -150,4 +153,7 @@ const Desc = styled.div`
 	letter-spacing: normal;
 	text-align: left;
 	color: white;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;

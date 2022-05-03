@@ -38,7 +38,9 @@ export default function Mobilebar() {
 						<Link href={"/about"} passHref={true}>
 							<li>About</li>
 						</Link>
-						<Link href={"/about"} passHref={true}>
+						<Link
+							href='https://discord.com/oauth2/authorize?client_id=948987039821484103&permissions=8&scope=bot'
+							passHref={true}>
 							<li>Download</li>
 						</Link>
 					</ul>

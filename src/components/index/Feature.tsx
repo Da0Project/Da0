@@ -20,13 +20,12 @@ export default function Feature() {
 						Through the wallet connection in the discord app, Da0 provide the
 						automated authorization in convenient way. When the wallet
 						connection steps, we check the user has the token of the DAO in
-						wallet. <br />
-						Therefore, the manager of the DAO discord don’t have to check if the
-						joined user has the DAO token or DAO’s NFT. Through the Da0
-						enrollment automation, DAO manager doesn’t have to use the Google
-						form or check if the user hold the token of DAO one by one because
-						Da0 check the authority and store the information and provide it as
-						the API.
+						wallet. Therefore, the manager of the DAO discord don’t have to
+						check if the joined user has the DAO token or DAO’s NFT. Through the
+						Da0 enrollment automation, DAO manager doesn’t have to use the
+						Google form or check if the user hold the token of DAO one by one
+						because Da0 check the authority and store the information and
+						provide it as the API.
 					</Desc>
 				</TextBox>
 			</ImageWrapper>
@@ -40,11 +39,10 @@ export default function Feature() {
 					<Desc>
 						Many DAO’s struggle is providing DAO’s information to anonymous user
 						to join their DAO, but it is hard to provide information and
-						aggregate it in the discord. <br />
-						To solve this problem, by using our application, by typing simple
-						slash command, user can view DAO’s information such as number of
-						DAO’s token holder, DAO treasury balance and overall information of
-						the DAO.
+						aggregate it in the discord. To solve this problem, by using our
+						application, by typing simple slash command, user can view DAO’s
+						information such as number of DAO’s token holder, DAO treasury
+						balance and overall information of the DAO.
 					</Desc>
 				</TextBox>
 				<Image2 src='/index/2.svg' />
@@ -128,7 +126,7 @@ const Sub = styled.p`
 `;
 const Desc = styled.p`
 	font-family: OpenSans, -apple-system;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -136,6 +134,9 @@ const Desc = styled.p`
 	letter-spacing: normal;
 	text-align: left;
 	color: #fafafa;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
 const Image2 = styled.img`
 	width: 29.338rem;
@@ -167,7 +168,7 @@ const Sub2 = styled.p`
 `;
 const Desc2 = styled.p`
 	font-family: OpenSans, -apple-system;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -179,13 +180,14 @@ const Desc2 = styled.p`
 	margin: auto;
 	@media only screen and (max-width: 600px) {
 		width: 100%;
+		font-size: 1.5rem;
 	}
 `;
 const Image3 = styled.img`
 	width: 71.375rem;
 	margin-top: 15.5rem;
 	@media only screen and (max-width: 600px) {
-		width: 20rem;
+		width: 30rem;
 		margin: 5rem 0;
 	}
 `;

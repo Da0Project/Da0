@@ -29,7 +29,6 @@ const Home: NextPage = () => {
 				MADE FROM ZERO, MANAGE USING REGIC MADE FROM ZERO, MANAGE USING REGIC
 			</FancyDivider>
 			<Intro />
-			<Divider />
 			<Feature />
 			<Dowload />
 			<Footer />

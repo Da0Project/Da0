@@ -58,7 +58,7 @@ const Wrapper = styled.div`
 `;
 const Info = styled.p`
   font-family: OpenSans, -apple-system;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -68,6 +68,7 @@ const Info = styled.p`
   color: #fafafa;
   	@media only screen and (max-width: 600px) {
 		margin: 0 4rem;
+		font-size: 1.5rem;
 	}
 }
 `;
@@ -127,4 +128,7 @@ const Desc = styled.div`
 	letter-spacing: normal;
 	text-align: left;
 	color: #fafafa;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;

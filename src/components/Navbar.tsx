@@ -22,7 +22,9 @@ export default function Navbar() {
 				<Link href={"/about"} passHref={true}>
 					<Button>About</Button>
 				</Link>
-				<Link href={"/about"} passHref={true}>
+				<Link
+					href='https://discord.com/oauth2/authorize?client_id=948987039821484103&permissions=8&scope=bot'
+					passHref={true}>
 					<DownloadButton>Download</DownloadButton>
 				</Link>
 			</ButtonWrapper>

@@ -63,7 +63,7 @@ const Sub = styled.p`
 `;
 const Desc = styled.p`
 	font-family: Roboto, -apple-system;
-	font-size: 1.25rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -71,4 +71,7 @@ const Desc = styled.p`
 	letter-spacing: normal;
 	text-align: left;
 	color: #fafafa;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
