@@ -21,7 +21,7 @@ export default function Why() {
 							The real decision-making is happening off-chain in conversations
 							and then voting on-chain as the final step of governance. Need to
 							lower cognitive overhead getting involved with governance so
-							\\anyone can get involved, vet, or whistleblow if something's not
+							anyone can get involved, vet, or whistleblow if something is not
 							going right.
 						</Desc>
 						<Desc>
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 `;
 const Title = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 4.5rem;
 	font-weight: 900;
 	font-stretch: normal;
@@ -115,7 +115,7 @@ const Content = styled.div`
 	margin-bottom: 3.5rem;
 `;
 const SubTitle = styled.p`
-	font-family: ITCAvantGardeGothicStd-Demi;
+	font-family: ITCAvantGardeGothicStd-Demi, -apple-system;
 	font-size: 2rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -127,7 +127,7 @@ const SubTitle = styled.p`
 	margin-bottom: 1.5rem;
 `;
 const Desc = styled.p`
-	font-family: ITCAvantGardeGothicStd;
+	font-family: ITCAvantGardeGothicStd, -apple-system;
 	font-size: 0.875rem;
 	font-weight: 500;
 	font-stretch: normal;
